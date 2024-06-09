@@ -1,0 +1,123 @@
+body {
+    margin:0%;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+    background-image: url("estilo/imagenes/balon.jpg");
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    
+}
+
+header {
+    background-color: #24331f;
+    color: #fff;
+    padding: 5%;
+    
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.top-assists, .top-goals, .top-cards, .dates {
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align:left;
+    color:#c4b1b1
+    
+
+}
+
+.logo{
+  position:absolute;
+  top: 5px;
+  left:70%;
+
+}
+.cerrarcesion a {
+position: absolute;
+  top: 18%;
+  left:85%;
+  color: rgb(172, 18, 18);
+}
+.principal a i{
+    font-size:45px;
+    color: #fafafa;
+}
+.main-content.top-assists{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.dates{
+
+border-radius: 20px ;
+background:transparent;
+color: aliceblue;
+border: 2px solid rgba(255,255,255,.2);
+backdrop-filter: blur(20px);
+border-collapse: separate;
+border-spacing: 50px;
+
+}
+
+.th, td {
+    padding: 26px; /* Espacio interno de las celdas */
+    border: 1px solid black; /* Borde de las celdas */
+}
+
+.Registro{
+
+    position: absolute;
+    top: 27%;
+    left:3%;
+    width: 9%;
+    border-radius: 20px ;
+    background:transparent;
+    color: aliceblue;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    border-collapse: separate;
+    border-spacing: 50px;
+    color: rgb(172, 18, 18);
+    text-align: center;
+}
+
+.puntos{
+
+    position: absolute;
+    top: 27%;
+    left:13%;
+    width: 9%;
+    border-radius: 20px ;
+    background:transparent;
+    color: aliceblue;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    border-collapse: separate;
+    border-spacing: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+
+}
+
+/* Cambiar el color de todos los enlaces con la clase .btn */
+.btn {
+    color: #ffffff; /* Color rojo */
+}
+
+/* O bien, puedes crear una nueva clase */
+.enlace-rojo {
+    color: #ffffff; /* Color rojo */
+}

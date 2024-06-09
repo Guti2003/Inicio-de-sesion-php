@@ -10,15 +10,8 @@
     <div class="logo">
         <img src="estilo/imagenes/logo.png" alt="cargando">      
     </div>
-
-    <div class="Registro">
-        <a href="Registrarequipo.php" class="btn enlace-rojo">Registrar equipo</a>
-    </div>
-    <div class="puntos">
-        <a href="Cambiar_Puntos/Cambiarpuntos.php" class="btn enlace-rojo">Editar Puntaje</a>
-    </div>
     <div class="cerrarcesion">
-        <a href="CerrarSesion.php" class="btn btn-danger">Cerrar Sesion</a>
+        <a href="index.php" class="btn btn-danger">Iniciar sesion</a>
     </div>
     <header>
         <h1>Bienvenido</h1>

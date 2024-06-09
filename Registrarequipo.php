@@ -13,23 +13,21 @@
       <img src="estilo/imagenes/logo.png" alt="cargando">
    </div>
    <div class="login">
-      <form action="IniciarSesion.php" method="POST">
-         <h1>Login</h1>
+      <form action="Registroequipo.php" method="POST">
+         <h1>Registrar equipo</h1>
 
          <div class="input-box">
-            <input type="text" name="Usuario1" placeholder="Nombre Usuario" required>
-            <i class='bx bxs-user'></i>
+            <input type="text" name="Nombre" placeholder="Nombre" required> <!-- Nombre del equipo -->
+            <i class='bx bxs-user'></i> 
          </div>
          <div class="input-box">
-            <input type="password" name="Clave1" placeholder="Contraseña" required>
-            <i class='bx bxs-lock-alt'></i>
+            <input type="text" name="Ciudad" placeholder="Nombre de ciudad" required> <!-- Ciudad -->
+            <i class='bx bxs-user'></i>
          </div>
-         <button type="submit" class="btn">Ingresar</button>
+         <button type="submit" class="btn">Registrar</button>
          <div class="register-link">
-            <p><a href="registro.php">Registrarse</a></p>
-         </div>
-         <div class="register-link">
-            <p><a href="Principal.php">Atras</a></p>
+            <p><a href="inicio.php">Volver</a></p>
+
          </div>
 
          </form>
