@@ -18,23 +18,71 @@
     </header>
     <section class="main-content">
 
-        <div class="top-assists">
+    <div class="top-assists">
             <h2>TOP 3 ASISTENCIAS</h2>
-            <h3>Harlan Barrera </h3>
-            <h3>Daniel Ruiz</h3>
-            <h3>Andres Ricaute</h3>
+            <table border="1"><?php
+
+            include "Conexion.php";
+
+            // Consulta SQL para obtener los equipos
+            $query = "SELECT * FROM jugadores ORDER BY Asistencias DESC LIMIT 3";
+                    
+            // Ejecutar la consulta
+            $result = mysqli_query($conexion, $query);
+
+            // Recorrer los resultados y mostrarlos en la tabla HTML
+            while($row = mysqli_fetch_assoc($result)) {
+            echo "<tr>";
+            echo "<td>" . $row['Jugador'] . "</td>";
+            echo "<td>" . $row['Asistencias'] . "</td>";
+            echo "</tr>";
+            }
+
+            ?></table>
         </div>
         <div class="top-goals">
             <h2>TOP 3 GOLES</h2>
-            <h3>Harlan Barrera </h3>
-            <h3>Daniel Ruiz</h3>
-            <h3>Andres Ricaute</h3>
+            <table border="1"><?php
+
+            include "Conexion.php";
+
+            // Consulta SQL para obtener los equipos
+            $query = "SELECT * FROM jugadores ORDER BY goles DESC LIMIT 3";
+                    
+            // Ejecutar la consulta
+            $result = mysqli_query($conexion, $query);
+
+            // Recorrer los resultados y mostrarlos en la tabla HTML
+            while($row = mysqli_fetch_assoc($result)) {
+            echo "<tr>";
+            echo "<td>" . $row['Jugador'] . "</td>";
+            echo "<td>" . $row['Goles'] . "</td>";
+            echo "</tr>";
+            }
+
+            ?></table>
         </div>
         <div class="top-cards">
             <h2>TOP 3 TARJETAS</h2>
-            <h3>Harlan Barrera </h3>
-            <h3>Daniel Ruiz</h3>
-            <h3>Andres Ricaute</h3>
+            <table border="1"><table border="1"><?php
+
+            include "Conexion.php";
+
+            // Consulta SQL para obtener los equipos
+            $query = "SELECT * FROM jugadores ORDER BY tarjetas DESC LIMIT 3";
+                    
+            // Ejecutar la consulta
+            $result = mysqli_query($conexion, $query);
+
+            // Recorrer los resultados y mostrarlos en la tabla HTML
+            while($row = mysqli_fetch_assoc($result)) {
+            echo "<tr>";
+            echo "<td>" . $row['Jugador'] . "</td>";
+            echo "<td>" . $row['Tarjetas'] . "</td>";
+            echo "</tr>";
+            }
+
+            ?></table>
         </div>
         <div class="dates">
             <h2>TABLA DE POSICIONES</h2>

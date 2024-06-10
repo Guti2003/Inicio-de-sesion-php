@@ -26,13 +26,20 @@ header {
     padding: 20px;
 }
 
-.top-assists, .top-goals, .top-cards, .dates {
+.dates {
     background-color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 20%;
     padding: 10px;
-    text-align:left;
+    text-align: center;
     color:#c4b1b1
-    
+
+}
+.top-assists, .top-goals, .top-cards {
+    background-color: transparent;
+    margin-bottom: 20%;
+    padding: 10px;
+    text-align: center;
+    color:#c4b1b1
 
 }
 
@@ -68,6 +75,19 @@ border: 2px solid rgba(255,255,255,.2);
 backdrop-filter: blur(20px);
 border-collapse: separate;
 border-spacing: 50px;
+
+}
+
+.top-assists, .top-goals, .top-cards{
+
+    border-radius: 20px ;
+    background:transparent;
+    color: aliceblue;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    border-collapse: separate;
+    border-spacing: 50px;
+
 
 }
 
@@ -120,4 +140,37 @@ border-spacing: 50px;
 /* O bien, puedes crear una nueva clase */
 .enlace-rojo {
     color: #ffffff; /* Color rojo */
+}
+
+.Jugadores{
+
+    position: absolute;
+    top: 27%;
+    left:23%;
+    width: 12%;
+    border-radius: 20px ;
+    background:transparent;
+    color: aliceblue;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    border-collapse: separate;
+    border-spacing: 50px;
+    color: rgb(172, 18, 18);
+    text-align: center;
+}
+.Actualizar_Jugadores{
+
+    position: absolute;
+    top: 27%;
+    left:36%;
+    width: 12%;
+    border-radius: 20px ;
+    background:transparent;
+    color: aliceblue;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    border-collapse: separate;
+    border-spacing: 50px;
+    color: rgb(172, 18, 18);
+    text-align: center;
 }
